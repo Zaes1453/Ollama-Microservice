@@ -51,6 +51,8 @@ pip install -r requirements.txt
 python3 llm_service.py
 ```
 
+**Note:** This microservice uses the **Mistral** model via **Ollama** to generate text responses. Ensure **Ollama** is installed and accessible in your system.
+
 ## Testing the LLM Model with Postman
 
 1. Open **Postman**.
@@ -86,5 +88,7 @@ python3 llm_service.py
 
 ## Notes
 - Ensure your virtual environment is activated before running the service.
-- The API must be running (`python3 llm_service.py`) before making requests in Postman.
+- The API must be running (`python3 llm_generate_prompt.py`) before making requests in Postman.
+- This microservice runs the **Mistral** LLM using **Ollama**.
+- Ensure that **Ollama** is installed and accessible in your system before running the service.
 - If you encounter errors, check the terminal logs for more details.
