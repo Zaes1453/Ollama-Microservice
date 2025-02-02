@@ -11,10 +11,6 @@
   - [Install Dependencies](#3-install-dependencies)
   - [Run the Service](#4-run-the-service)
 - [Testing the LLM Model with Postman](#testing-the-llm-model-with-postman)
-  - [Create a POST Request](#1-create-a-post-request)
-  - [Enter Prompt in JSON Format](#2-enter-prompt-in-json-format)
-  - [Send the Request](#3-send-the-request)
-  - [View the Response](#4-view-the-response)
 - [Notes](#notes)
 
 ## Getting Started
