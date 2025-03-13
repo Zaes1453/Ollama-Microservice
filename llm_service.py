@@ -12,7 +12,7 @@ def generate_text():
         return jsonify({"error": "No prompt provided"}), 400
 
     try:
-        # We run mistral through olama here
+        # Run Ollama with Mistral
         result = subprocess.run(
             ["ollama", "run", "mistral", prompt],
             capture_output=True, text=True
@@ -25,4 +25,4 @@ def generate_text():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
